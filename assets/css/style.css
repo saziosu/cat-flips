@@ -4,4 +4,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #FC948D;
+}
+
+h1 {
+    font-family: "Baloo 2", sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: white;
 }
