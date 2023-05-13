@@ -18,4 +18,30 @@ p {
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+.memory-card-game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    justify-content: center;
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    margin: 5px;
+}
+
+.front, .back {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.back {
+    position: absolute;
 }
