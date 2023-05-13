@@ -28,7 +28,7 @@ p {
 .game-area {
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
+    width: 700px;
     justify-content: center;
     margin: auto;
 }
@@ -39,7 +39,7 @@ p {
 }
 
 .front, .back {
-    width: 200px;
+    width: 150px;
     border-radius: 20px;
 }
 
