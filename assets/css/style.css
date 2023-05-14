@@ -36,15 +36,30 @@ p {
 .card {
     position: relative;
     margin: 5px;
+    width: 150px;
+    background-color: transparent;
+    perspective: 1000px;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.card:active {
+    transform: rotateY(180deg);
 }
 
 .front, .back {
-    width: 150px;
+    width: 100%;
     border-radius: 20px;
+    backface-visibility: hidden;
+    
 }
 
 .back {
     position: absolute;
+}
+
+.front {
+    transform: rotateY(180deg);
 }
 
 button {
