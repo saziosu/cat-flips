@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Montserrat:ital,wght@0,400;1,500&display=swap');
-
+/* global styling */
 * {
     padding: 0;
     margin: 0;
@@ -22,9 +22,7 @@ p {
     text-align: center;
     padding-bottom: 50px;
 }
-
-
-
+/* styling game area */
 .game-area {
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +30,7 @@ p {
     justify-content: center;
     margin: auto;
 }
-
+/* styling flip cards */
 .card {
     position: relative;
     margin: 5px;
@@ -47,6 +45,10 @@ p {
     transform: rotateY(180deg);
 }
 
+.front {
+    transform: rotateY(180deg);
+}
+
 .front, .back {
     width: 100%;
     border-radius: 20px;
@@ -57,11 +59,7 @@ p {
 .back {
     position: absolute;
 }
-
-.front {
-    transform: rotateY(180deg);
-}
-
+/* buttons */
 button {
     width: 20%;
     font-family: "Montserrat", sans-serif;
@@ -79,7 +77,7 @@ button {
     justify-content: center;
     margin: auto;
 }
-
+/* game info - time and moves */
 .game-info {
     font-family: "Montserrat", sans-serif;
     text-align: center;
