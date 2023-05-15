@@ -41,7 +41,7 @@ p {
     transform-style: preserve-3d;
 }
 
-.card:active {
+.flip {
     transform: rotateY(180deg);
 }
 
