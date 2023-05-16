@@ -23,6 +23,8 @@ function flipCard(event) {
       }
 }
 
+
+
 // set onclick attribute to call reset game function
 let resetButton = document.getElementsByTagName('button')[0];
 resetButton.setAttribute('onclick', 'resetGame();');
