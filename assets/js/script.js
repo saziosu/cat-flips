@@ -4,10 +4,23 @@ for (card of cards){
     card.addEventListener('click', flipCard)
 }
 
-// function to add flip class to clicked card
+// set first, second clicked card variables
+let firstCard;
+let secondCard;
+let hasClicked = false;
+
+// function to flip the card on click
 function flipCard(event) {
-    event.target.classList.add('flip');
-    console.log("card clicked");
+    this.classList.add('flip');
+    // check if the first or second card has been clicked
+      if (!hasClicked) { // if hasClicked is false, this is the first card being clicked
+          hasClicked = true;
+          firstCard = this;
+      } else { // has clicked is true, this is the second card being clicked
+          hasClicked = false;
+          secondCard = this;
+          console.log(firstCard, secondCard);
+      }
 }
 
 // set onclick attribute to call reset game function
