@@ -47,6 +47,7 @@ resetButton.setAttribute('onclick', 'resetGame();');
 function resetGame() {
     for (card of cards) {
     card.classList.remove('flip');
+    card.addEventListener('click', flipCard);
     }
     console.log("game reset!");
 }
