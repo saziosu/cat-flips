@@ -19,10 +19,24 @@ function flipCard(event) {
       } else { // has clicked is true, this is the second card being clicked
           hasClicked = false;
           secondCard = this;
-          console.log(firstCard, secondCard);
+          checkPair();
       }
 }
 
+// function to check if the cards match
+function checkPair() {
+    // if first and second card match, remove the click event listener
+    if (firstCard.dataset.cat === secondCard.dataset.cat) {
+        firstCard.removeEventListener("click", flipCard);
+        secondCard.removeEventListener("click", flipCard);
+    } else {
+        // if they don't match, remove the flip class so the back face of the card is returned
+        setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+        }, 900);
+    }
+}
 
 
 // set onclick attribute to call reset game function
