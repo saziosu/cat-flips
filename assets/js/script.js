@@ -1,7 +1,7 @@
 // add event listener to call flipcard function when clicked
 let cards = document.getElementsByClassName('card');
-for (card of cards){
-    card.addEventListener('click', flipCard)
+for (let card of cards){
+    card.addEventListener('click', flipCard);
 }
 
 // set first, second clicked card variables
@@ -38,16 +38,15 @@ function checkPair() {
     }
 }
 
-
-// set onclick attribute to call reset game function
-let resetButton = document.getElementsByTagName('button')[0];
-resetButton.setAttribute('onclick', 'resetGame();');
-
 // reset game function
 function resetGame() {
-    for (card of cards) {
+    for (let card of cards) {
     card.classList.remove('flip');
     card.addEventListener('click', flipCard);
     }
     console.log("game reset!");
 }
+
+// set onclick attribute to call reset game function
+let resetButton = document.getElementsByTagName('button')[0];
+resetButton.setAttribute('onclick', 'resetGame();');
