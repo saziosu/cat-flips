@@ -47,7 +47,18 @@ function resetGame() {
         card.classList.remove('flip');
         card.addEventListener('click', flipCard);
     }
-    console.log("game reset!");
+    shuffleDeck(); // when game is reset, shuffle cards
+}
+
+// get array from cards Class HTML collection
+let cardsArray = Array.from(cards);
+// function to shuffle the cards
+function shuffleDeck() {
+    for (let i = cardsArray.length - 1; i > 0; i--) {
+        let rand = Math.floor(Math.random() * (i + 1));
+        cardsArray[rand].style.order = i;
+        cardsArray[i].style.order = rand;
+    }
 }
 
 // set onclick attribute to call reset game function
