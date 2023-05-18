@@ -1,3 +1,6 @@
+// shuffle the deck when the page finishes loading
+document.addEventListener("DOMContentLoaded", shuffleDeck)
+
 // add event listener to call flipcard function when clicked
 let cards = document.getElementsByClassName('card');
 for (let card of cards) {
@@ -47,7 +50,9 @@ function resetGame() {
         card.classList.remove('flip');
         card.addEventListener('click', flipCard);
     }
+    setTimeout(() => { // setting timeout on the shuffle reset
     shuffleDeck(); // when game is reset, shuffle cards
+    }, 200);
 }
 
 // get array from cards Class HTML collection
