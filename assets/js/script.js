@@ -9,7 +9,13 @@ startButton.addEventListener("click", startGame);
 function startGame (event) {
     let modal = document.getElementById("modal");
     modal.style.display = "none";
-    console.log("Game started!");
+    // start the timer when the game starts
+    let timeDisplay = document.getElementById("time");
+    let startTime = Date.now();
+    let time = setInterval(function () {
+        let timeSpent = Math.floor((Date.now() - startTime) / 1000);
+        timeDisplay.innerText = timeSpent;
+    })
 }
 
 // add event listener to call flipcard function when clicked
@@ -70,6 +76,7 @@ function resetGame() {
     }
     // reset moves to zero
     document.getElementById("moves").innerText = 0;
+    document.getElementById("time").innerText = 0;
     setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
     shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
@@ -88,5 +95,5 @@ function shuffleDeck() {
 }
 
 // set onclick attribute to call reset game function
-let resetButton = document.getElementsByTagName('button')[0];
+let resetButton = document.getElementsByTagName('button')[1];
 resetButton.setAttribute('onclick', 'resetGame();');
