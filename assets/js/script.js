@@ -22,8 +22,15 @@ function flipCard(event) {
     } else { // has clicked is true, this is the second card being clicked
         hasClicked = false;
         secondCard = this;
+        incrementMoves();
         checkPair();
     }
+}
+
+// function to update moves number
+function incrementMoves() {
+    let previousMoves = parseInt(document.getElementById("moves").innerText);
+    document.getElementById("moves").innerText = ++previousMoves;
 }
 
 // function to check if the cards match
