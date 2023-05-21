@@ -57,7 +57,9 @@ function resetGame() {
         card.classList.remove('flip');
         card.addEventListener('click', flipCard);
     }
-    setTimeout(() => { // setting timeout on the shuffle reset
+    // reset moves to zero
+    document.getElementById("moves").innerText = 0;
+    setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
     shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
 }
