@@ -5,9 +5,11 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    
+}
+body {
     background-color: #FC948D;
 }
-
 h1 {
     font-family: "Baloo 2", sans-serif;
     font-size: 8rem;
@@ -22,8 +24,39 @@ p {
     text-align: center;
     padding-bottom: 50px;
 }
-/* styling game area */
 
+/* styling modal on game start */
+#modal {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(9, 146, 246, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#modal-content {
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(9, 146, 246, 1);
+    height: 60%;
+    width: 60%;
+    border-radius: 4%;
+    margin: auto;
+    text-align: center;
+}
+
+#modal h1 {
+    font-size: 3rem;
+    padding: 40px;
+}
+
+
+
+/* styling game area */
 #flip-card-game {
     display: flex;
     align-items: center;
@@ -44,7 +77,6 @@ p {
     text-align: center;
     font-size: 2.5rem;
 }
-
 
 /* styling flip cards */
 .card {

@@ -62,6 +62,7 @@ function resetGame() {
     setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
     shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
+    
 }
 
 // get array from cards Class HTML collection
