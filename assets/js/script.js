@@ -1,5 +1,16 @@
 // shuffle the deck when the page finishes loading
-document.addEventListener("DOMContentLoaded", shuffleDeck)
+document.addEventListener("DOMContentLoaded", shuffleDeck);
+
+// add event listener for when startButton is clicked
+let startButton = document.getElementById("submit-start");
+startButton.addEventListener("click", startGame);
+
+// function to start game whe startButton is clicked
+function startGame (event) {
+    let modal = document.getElementById("modal");
+    modal.style.display = "none";
+    console.log("Game started!");
+}
 
 // add event listener to call flipcard function when clicked
 let cards = document.getElementsByClassName('card');
@@ -62,7 +73,7 @@ function resetGame() {
     setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
     shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
-    
+
 }
 
 // get array from cards Class HTML collection
