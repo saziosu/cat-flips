@@ -9,14 +9,16 @@ form.addEventListener('submit', startGame);
 function startGame (event) {
     // prevent default action of the form
     event.preventDefault();
-    let username = document.getElementById("name").value
-    console.log(username);
+    let username = document.getElementById("name").value;
+    let statInput = document.getElementById("stat-input");
+    statInput.innerHTML = `Welcome, ${username}!<br>Thank you for playing!<br>Your current game stats are here:`;
     let modal = document.getElementById("modal");
+    console.log(username, statInput);
     modal.style.display = "none";
     // start the timer when the game starts
     let timeDisplay = document.getElementById("time");
     let startTime = Date.now();
-    let time = setInterval(function () {
+    setInterval(function () {
         let timeSpent = Math.floor((Date.now() - startTime) / 1000);
         timeDisplay.innerText = timeSpent;
     })
