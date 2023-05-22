@@ -70,6 +70,13 @@ p {
     margin-top: 30px;
 }
 
+/* style user-info form on modal */
+#userinfo {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
 
 /* styling game area */
 #flip-card-game {
