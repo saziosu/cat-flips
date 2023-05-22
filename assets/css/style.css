@@ -97,7 +97,8 @@ p {
 .game-info {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
+    color: white;
 }
 
 /* styling flip cards */
@@ -141,7 +142,6 @@ button {
     text-align: center;
     margin: 20px;
     color: white;
-    margin-right: 400px;
 }
 
 .buttons {
