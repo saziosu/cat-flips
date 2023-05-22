@@ -1,12 +1,16 @@
 // shuffle the deck when the page finishes loading
 document.addEventListener("DOMContentLoaded", shuffleDeck);
 
-// add event listener for when startButton is clicked
-let startButton = document.getElementById("submit-start");
-startButton.addEventListener("click", startGame);
+// add event listener for when username form is submitted
+let form = document.getElementById("userinfo");
+form.addEventListener('submit', startGame);
 
 // function to start game whe startButton is clicked
 function startGame (event) {
+    // prevent default action of the form
+    event.preventDefault();
+    let username = document.getElementById("name").value
+    console.log(username);
     let modal = document.getElementById("modal");
     modal.style.display = "none";
     // start the timer when the game starts
