@@ -11,9 +11,10 @@ function startGame (event) {
     event.preventDefault();
     let username = document.getElementById("name").value;
     let statInput = document.getElementById("stat-input");
+    // add user input into above the game info details
     statInput.innerHTML = `Welcome, ${username}!<br>Thank you for playing!<br>Your current game stats are here:`;
     let modal = document.getElementById("modal");
-    console.log(username, statInput);
+    // remove modal display when the game starts
     modal.style.display = "none";
     // start the timer when the game starts
     let timeDisplay = document.getElementById("time");
