@@ -35,9 +35,10 @@ for (let card of cards) {
 let firstCard;
 let secondCard;
 let hasClicked = false;
-
+let haltFlip = false
 // function to flip the card on click
 function flipCard(event) {
+    if (haltFlip) return;
     this.classList.add('flip');
     // check if the first or second card has been clicked
     if (!hasClicked) { // if hasClicked is false, this is the first card being clicked
@@ -66,13 +67,30 @@ function checkPair() {
     && firstCard.dataset.cat.slice(-2) !== secondCard.dataset.cat.slice(-2)) {
         firstCard.removeEventListener("click", flipCard);
         secondCard.removeEventListener("click", flipCard);
+        firstCard.classList.add("flipped");
+        secondCard.classList.add("flipped");
     } else {
         // if they don't match, remove the flip class so the back face of the card is returned
-        setTimeout(() => {
-            firstCard.classList.remove('flip');
-            secondCard.classList.remove('flip');
-        }, 900);
+        returnCards();
     }
+}
+
+function returnCards (){
+    haltFlip = true;
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+        haltFlip = false
+    }, 900);
+}
+
+// if the number of flipped cards is 12, run the end timer function
+let flippedCards = document.getElementsByClassName("flipped");
+if (flippedCards.length === 12) {
+    endTimer();
+    }
+function endTimer () {
+    console.log("timer finished");
 }
 
 // reset game function
@@ -104,3 +122,4 @@ function shuffleDeck() {
 // set onclick attribute to call reset game function
 let resetButton = document.getElementsByTagName('button')[1];
 resetButton.setAttribute('onclick', 'resetGame();');
+
