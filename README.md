@@ -88,6 +88,16 @@ Fonts were chosed from GoogleFonts
 * [GitHub](https://github.com/) was used to deploy the site code
 * [AmIResponsive](https://ui.dev/amiresponsive) was used to create the cross device responsivity images
 
+# Deployment
+
+GitHub pages was used to deploy this site:
+
+1. Login (or signup) to Github.
+2. Go to the repo for the project, [saziosu/cat-flips](https://github.com/saziosu/cat-flips/).
+3. Click the settings button.
+4. Select pages on the left navigation menu.
+5. From the source dropdown select main branch and click save next to it.
+6. The site has been deployed on clicking save, this can take a few moments to generate the live link at the top of the settings page.
 
 # Testing
 
