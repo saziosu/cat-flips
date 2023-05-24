@@ -1,39 +1,57 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Cat Flips Memory Game
+Cat Flips is a fun memory game designed to be responsive on all sites allowing it to be played on all screen sizes.
 
-Welcome,
+RESPONSIVE IMAGE HERE
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+* table
+  * of
+  * Contents
 
-## Codeanywhere Reminders
+# User Experience
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The goal of the site is to be brightly colored and attractive to the user, while accessible and easy to use and understand.
+<br>
+The name entry at the start of the game offers a personalised experience for the user.
+<br>
+The moves and timer are always in view to the user during the game, so they can be aware of their stats at any moment.
 
-`python3 -m http.server`
+## User Stories
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* First Time User
+  * As a first time User, we want to immediately know what the purpose and theme of the site.
+  * As a first time User, we want to be aware of any rules or processes involved in the game.
+  * As a first time user, we want the site to be attracitve and easy to use across many devices.
+* Returning User
+  * As a returning User, we want a familiar feel on returning so the color scheme and personalised aspect will remain the same.
+  * As a returning User, we want to be able to see our previous scores to try improve the following time.
+* Frequent User
+  * xxxxxx
+  * xxxxxx
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Wireframes
 
-`http_server`
+Balsamiq was used to create the wireframes for this project for desktop, tablet and mobile screens
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+IMAGE HERE
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+# Design
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Color Scheme
 
-To log into the Heroku toolbelt CLI:
+XXXXXXXXXXXXXXX - colors are not set fully yet.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Typography
+Fonts were chosed from GoogleFonts
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Baloo 2 was used for headings
 
----
+* Montserrat was used for all other text
 
-Happy coding!
+* San-serif was used for the fallback font for all external fonts
+
+## Imagery
+
+* Images in the body were sourced from [FreePik](https://www.freepik.com/). Further information will be in the credits on this document.
+* Favicon images were generated via [favicon.io](https://favicon.io/favicon-generator/)
