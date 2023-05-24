@@ -43,6 +43,7 @@ IMAGE HERE
 XXXXXXXXXXXXXXX - colors are not set fully yet.
 
 ## Typography
+
 Fonts were chosed from GoogleFonts
 
 * Baloo 2 was used for headings
@@ -55,3 +56,34 @@ Fonts were chosed from GoogleFonts
 
 * Images in the body were sourced from [FreePik](https://www.freepik.com/). Further information will be in the credits on this document.
 * Favicon images were generated via [favicon.io](https://favicon.io/favicon-generator/)
+
+# Features 
+
+## Current Features
+
+## Future Features
+
+## Accessibility
+
+* Semantic HTML was used in the index.html file to ensure accessibility.
+* All images were given alt tags to ensure they could be read by screenreaders.
+*  XXXXXXXXXXX
+
+# Technology Used
+
+## Languages
+
+* HTML
+* CSS
+* JavaScript
+
+## Frameworks, Libraries & Programs 
+
+* [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes to plan out the website.
+* [GoogleFonts](https://fonts.google.com/) were used to import the font.
+* [Adobe Express Editor](https://express.adobe.com/tools/image-resize) was used to resize the images.
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) was used to construct a flexible layout and responsive design
+* [Git](https://git-scm.com/) was used for version control
+* [Gitpod](https://gitpod.io/) was used to write the code
+* [GitHub](https://github.com/) was used to deploy the site code
+* [AmIResponsive](https://ui.dev/amiresponsive) was used to create the cross device responsivity images
