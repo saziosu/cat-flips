@@ -87,3 +87,29 @@ Fonts were chosed from GoogleFonts
 * [Gitpod](https://gitpod.io/) was used to write the code
 * [GitHub](https://github.com/) was used to deploy the site code
 * [AmIResponsive](https://ui.dev/amiresponsive) was used to create the cross device responsivity images
+
+
+# Testing
+
+[TESTING.md](TESTING.md)
+
+# Credits
+
+## Code
+
+* [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek), I followed this tutorial to help create the structure for the flip card game and also to help me with turning the cards and blocking the board when the second card is turning.
+* [PortEXE](https://youtu.be/3uuQ3g92oPQ). I used this tutorial to help me implement the Fisher-Yates Shuffle algorithm to shuffle my cards
+* TIMER
+* [Code Institute](https://github.com/saziosu/love-maths), I used the Love Maths project as inspriation for helping me count the number of moves.
+
+## Media
+
+* [Catalyst @ FreePik](https://www.freepik.com/author/catalyststuff) all images on the flip cards were sourced from this resource/artist.
+* [Favicon.io](https://favicon.io/favicon-generator/) was used to generate the favicon
+
+# Acknowledgements
+
+* XXXXXX
+* XXXXXX
+* XXXXXX
+* XXXXXX
