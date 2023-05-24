@@ -67,8 +67,6 @@ function checkPair() {
     && firstCard.dataset.cat.slice(-2) !== secondCard.dataset.cat.slice(-2)) {
         firstCard.removeEventListener("click", flipCard);
         secondCard.removeEventListener("click", flipCard);
-        firstCard.classList.add("flipped");
-        secondCard.classList.add("flipped");
     } else {
         // if they don't match, remove the flip class so the back face of the card is returned
         returnCards();
@@ -82,15 +80,6 @@ function returnCards (){
         secondCard.classList.remove('flip');
         haltFlip = false
     }, 900);
-}
-
-// if the number of flipped cards is 12, run the end timer function
-let flippedCards = document.getElementsByClassName("flipped");
-if (flippedCards.length === 12) {
-    endTimer();
-    }
-function endTimer () {
-    console.log("timer finished");
 }
 
 // reset game function
