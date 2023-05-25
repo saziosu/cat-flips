@@ -37,3 +37,22 @@ Lighthouse, via chrome dev tools, was used to ensure the accessibility is at an 
 
 * SCREENSHOT
 
+# Manual Testing
+
+## User Testing
+
+### First Time User
+
+### Returning User
+
+## Frequent User
+
+# Full Testing
+
+# Bugs
+
+## Known Bugs
+
+## Fixed bugs
+
+
