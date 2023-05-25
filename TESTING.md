@@ -6,15 +6,31 @@ RESPONSIVE SCREENSHOT HERE
 
 # Table of Contents
 
+* [Automated Testing](#automated-testing)
+    * [JavaScript](#javascript-validator)
+    * [W3C](#html-validator)
+    * [CSS Validator](#css-validator)
+    * [Lighthouse](#lighthouse)
+    * [Wave](#wave)
+* [Manual Testing](#manual-testing)
+    * [User Testing](#user-testing)
+        * [First Time User](#first-time-user)
+        * [Returning User](#returning-user)
+        * [Frequent User](#frequent-user)
+* [Full Testing](#full-testing)
+* [Bugs](#bugs)
+    * [Known Bugs](#known-bugs)
+    * [Fixed Bugs](#fixed-bugs)
+
 # Automated Testing
 
-## Jshint
+## JavaScript Validator
 
 [Jshint](https://jshint.com/) was used to validate the JavaScript code in the project
 
 * SCREENSHOT
 
-## W3C
+## HTML Validator
 [W3C](https://validator.w3.org/) was used to validate the HTML code in the project
 
 * SCREENSHOT
