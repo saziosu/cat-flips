@@ -42,10 +42,11 @@ function endGame(){
     <br>
     You found all matches in ${timeScore} seconds!
     <br>
-    The managed to find all matches in ${movesScore} moves!
+    You managed to find all matches in ${movesScore} moves!
     <br>
     Well done!
     </p>
+    <button onclick="startGame();" id="restart">Click Here to Try Again!</button>
     </div>
     `
     modal.innerHTML = successModal
@@ -110,15 +111,17 @@ function returnCards (){
     }, 900);
 }
 
+
 // reset game function
 function resetGame() {
     for (let card of cards) {
         card.classList.remove('flip');
         card.addEventListener('click', flipCard);
+        card.classList.remove("match");
     }
     // reset moves to zero
-    document.getElementById("moves").innerText = 0;
-    document.getElementById("time").innerText = 0;
+    document.getElementById("moves").innerHTML = 0;
+    seconds = -1; // reset the timer, set to -1 as was going to 1
     setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
     shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
