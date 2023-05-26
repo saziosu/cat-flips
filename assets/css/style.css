@@ -42,16 +42,17 @@ p {
     position: fixed;
     z-index: 2;
     background-color: rgba(9, 146, 246, 1);
-    height: 50%;
+    height: auto;
     width: 60%;
     border-radius: 4%;
     margin: auto;
     text-align: center;
+    padding-top: 40px;
 }
 
 #modal h1 {
     font-size: 3rem;
-    padding: 40px;
+    padding: 0px;
 }
 
 #modal p {
