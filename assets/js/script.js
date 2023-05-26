@@ -20,11 +20,11 @@ function startGame (event) {
 let seconds = 0;
 const matches = document.getElementsByClassName("match");
 let startButton = document.getElementById("submit-start");
-startButton.setAttribute('onclick', 'setInterval(gameTimer, 1000)');
+startButton.setAttribute('onclick', 'timeInterval =  setInterval(gameTimer, 1000)');
 function gameTimer() {
         document.getElementById("time").innerHTML = ++seconds;
     if ( matches.length === 6) {
-        clearInterval(interval);
+        clearInterval(timeInterval);
     }
 }
 
