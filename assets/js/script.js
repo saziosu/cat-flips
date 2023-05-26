@@ -2,22 +2,22 @@
 document.addEventListener("DOMContentLoaded", shuffleDeck);
 
 // add event listener for when username form is submitted
-let form = document.getElementById("userinfo");
+const form = document.getElementById("userinfo");
 form.addEventListener('submit', startGame);
 
 // function to start game whe startButton is clicked
 function startGame (event) {
     // prevent default action of the form
     event.preventDefault();
-    let username = document.getElementById("name").value;
-    let statInput = document.getElementById("stat-input");
+    const username = document.getElementById("name").value;
+    const statInput = document.getElementById("stat-input");
     // add user input into above the game info details
     statInput.innerHTML = `Welcome, ${username}!<br>Thank you for playing!<br>Your current game stats are here:`;
-    let modal = document.getElementById("modal");
+    const modal = document.getElementById("modal");
     // remove modal display when the game starts
     modal.style.display = "none";
     // start the timer when the game starts
-    let timeDisplay = document.getElementById("time");
+    const timeDisplay = document.getElementById("time");
     let startTime = Date.now();
     setInterval(function () {
         let timeSpent = Math.floor((Date.now() - startTime) / 1000);
@@ -74,7 +74,7 @@ function checkPair() {
 }
 
 function returnCards (){
-    haltFlip = true;
+    haltFlip = true; // haltFlip locks the rest of the cards while the second card is turning
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
