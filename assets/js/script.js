@@ -5,15 +5,16 @@ document.addEventListener("DOMContentLoaded", shuffleDeck);
 const form = document.getElementById("userinfo");
 form.addEventListener('submit', startGame);
 
+// define the modal as a variable
+const modal = document.getElementById("modal");
 // function to start game when the button on modal is clicked
 function startGame (event) {
     // prevent default action of the form
     event.preventDefault();
-    const username = document.getElementById("name").value;
+    let username = document.getElementById("name").value;
     const statInput = document.getElementById("stat-input");
     // add user input into above the game info details
     statInput.innerHTML = `Welcome, ${username}!<br>Thank you for playing!<br>Your current game stats are here:`;
-    const modal = document.getElementById("modal");
     modal.style.display = "none";  // remove modal display when the game starts
 }
 
@@ -25,9 +26,30 @@ function gameTimer() {
         document.getElementById("time").innerHTML = ++seconds;
     if ( matches.length === 6) {
         clearInterval(timeInterval);
+        endGame();
     }
 }
 
+function endGame(){
+    modal.style.removeProperty("display"); // re-use the welcome modal for the success modal
+    const timeScore = document.getElementById('time').innerText;
+    const movesScore = document.getElementById("moves").innerText;
+    let username = document.getElementById("name").value;
+    let successModal = `
+    <div id="modal-content">
+    <h1>Congratulations!<h1>
+    <p>${username}, you're a winner!
+    <br>
+    You found all matches in ${timeScore} seconds!
+    <br>
+    The managed to find all matches in ${movesScore} moves!
+    <br>
+    Well done!
+    </p>
+    </div>
+    `
+    modal.innerHTML = successModal
+}
 
 // add event listener to call flipcard function when clicked
 let cards = document.getElementsByClassName('card');
@@ -78,6 +100,7 @@ function checkPair() {
     }
 }
 
+// if the cards do not match, flip them back over.
 function returnCards (){
     haltFlip = true; // haltFlip locks the rest of the cards while the second card is turning
     setTimeout(() => {
