@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", shuffleDeck);
 const form = document.getElementById("userinfo");
 form.addEventListener('submit', startGame);
 
-// function to start game whe startButton is clicked
+// function to start game when the button on modal is clicked
 function startGame (event) {
     // prevent default action of the form
     event.preventDefault();
@@ -14,16 +14,20 @@ function startGame (event) {
     // add user input into above the game info details
     statInput.innerHTML = `Welcome, ${username}!<br>Thank you for playing!<br>Your current game stats are here:`;
     const modal = document.getElementById("modal");
-    // remove modal display when the game starts
-    modal.style.display = "none";
-    // start the timer when the game starts
-    const timeDisplay = document.getElementById("time");
-    let startTime = Date.now();
-    setInterval(function () {
-        let timeSpent = Math.floor((Date.now() - startTime) / 1000);
-        timeDisplay.innerText = timeSpent;
-    })
+    modal.style.display = "none";  // remove modal display when the game starts
 }
+
+let seconds = 0;
+const matches = document.getElementsByClassName("match");
+let startButton = document.getElementById("submit-start");
+startButton.setAttribute('onclick', 'setInterval(gameTimer, 1000)');
+function gameTimer() {
+        document.getElementById("time").innerHTML = ++seconds;
+    if ( matches.length === 6) {
+        clearInterval(interval);
+    }
+}
+
 
 // add event listener to call flipcard function when clicked
 let cards = document.getElementsByClassName('card');
@@ -37,7 +41,7 @@ let secondCard;
 let hasClicked = false;
 let haltFlip = false
 // function to flip the card on click
-function flipCard(event) {
+function flipCard() {
     if (haltFlip) return;
     this.classList.add('flip');
     // check if the first or second card has been clicked
@@ -67,6 +71,7 @@ function checkPair() {
     && firstCard.dataset.cat.slice(-2) !== secondCard.dataset.cat.slice(-2)) {
         firstCard.removeEventListener("click", flipCard);
         secondCard.removeEventListener("click", flipCard);
+        secondCard.classList.add("match");
     } else {
         // if they don't match, remove the flip class so the back face of the card is returned
         returnCards();
