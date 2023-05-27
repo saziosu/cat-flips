@@ -49,14 +49,6 @@ function endGame(){
     modal.innerHTML = successModal
 }
 
-function replayGame(){
-    timeInterval =  setInterval(gameTimer, 1000);
-    resetGame();
-    previousMoves = 0;
-    seconds = 0;
-    modal.style.display = "none";
-}
-
 // add event listener to call flipcard function when clicked
 let cards = document.getElementsByClassName('card');
 for (let card of cards) {
@@ -131,6 +123,12 @@ function resetGame() {
     shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
 
+}
+
+function replayGame(){
+    timeInterval =  setInterval(gameTimer, 1000);
+    resetGame();
+    modal.style.display = "none";
 }
 
 // get array from cards Class HTML collection
