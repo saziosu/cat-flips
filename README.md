@@ -51,7 +51,7 @@ The moves and timer are always in view to the user during the game, so they can 
 
 Balsamiq was used to create the wireframes for this project for desktop, tablet and mobile screens
 
-IMAGE HERE
+![](assets/images/readme-images/wireframes.png)
 
 # Design
 
