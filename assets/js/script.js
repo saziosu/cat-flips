@@ -14,7 +14,7 @@ function startGame (event) {
     let username = document.getElementById("name").value;
     const statInput = document.getElementById("stat-input");
     // add user input into above the game info details
-    statInput.innerHTML = `Welcome, ${username}!<br>Thank you for playing!<br>Your current game stats are here:`;
+    statInput.innerHTML = `Welcome, <span id=player-name>${username}</span>!<br>Thank you for playing!<br>Your current game stats are here:`;
     modal.style.display = "none";  // remove modal display when the game starts
 }
 
@@ -34,10 +34,14 @@ function endGame(){
     modal.style.removeProperty("display"); // re-use the welcome modal for the success modal
     const timeScore = document.getElementById('time').innerText;
     const movesScore = document.getElementById("moves").innerText;
+    const playerName = document.getElementById("player-name").innerText;
     let successModal = `
     <div id="modal-content">
-    <h1>Congratulations, you're a winner!<h1>
-    <p>You found all matches in ${timeScore} seconds!
+    <h1>Congratulations!<h1>
+    <p>
+    ${playerName}, you're a winner!
+    <br>
+    You found all matches in ${timeScore} seconds!
     <br>
     You managed to find all matches in ${movesScore} moves!
     <br>
@@ -45,7 +49,7 @@ function endGame(){
     </p>
     <button onclick="replayGame()" id="restart">Click Here to Play Again!</button>
     </div>
-    `
+    `;
     modal.innerHTML = successModal
 }
 
