@@ -34,13 +34,10 @@ function endGame(){
     modal.style.removeProperty("display"); // re-use the welcome modal for the success modal
     const timeScore = document.getElementById('time').innerText;
     const movesScore = document.getElementById("moves").innerText;
-    let username = document.getElementById("name").value;
     let successModal = `
     <div id="modal-content">
-    <h1>Congratulations!<h1>
-    <p>${username}, you're a winner!
-    <br>
-    You found all matches in ${timeScore} seconds!
+    <h1>Congratulations, you're a winner!<h1>
+    <p>You found all matches in ${timeScore} seconds!
     <br>
     You managed to find all matches in ${movesScore} moves!
     <br>
@@ -55,6 +52,8 @@ function endGame(){
 function replayGame(){
     timeInterval =  setInterval(gameTimer, 1000);
     resetGame();
+    previousMoves = 0;
+    seconds = 0;
     modal.style.display = "none";
 }
 
@@ -95,9 +94,8 @@ function incrementMoves() {
 function checkPair() {
     // if first and second card match, remove the click event listener
     // cards match if the dataset matches excluding the last 2 characters
-    if (firstCard.dataset.cat.slice(0, -2) === secondCard.dataset.cat.slice(0, -2)
-    //if the last two characteres in the dataset match, it is the same card so it should not count as a pair
-    && firstCard.dataset.cat.slice(-2) !== secondCard.dataset.cat.slice(-2)) {
+    if (firstCard.dataset.cat.slice(0, -2) === secondCard.dataset.cat.slice(0, -2) && firstCard.dataset.cat.slice(-2) !== secondCard.dataset.cat.slice(-2)) {
+        //if the last two characteres in the dataset match, it is the same card so it should not count as a pair
         firstCard.removeEventListener("click", flipCard);
         secondCard.removeEventListener("click", flipCard);
         secondCard.classList.add("match");
