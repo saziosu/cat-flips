@@ -46,10 +46,16 @@ function endGame(){
     <br>
     Well done!
     </p>
-    <button onclick="startGame();" id="restart">Click Here to Try Again!</button>
+    <button onclick="replayGame()" id="restart">Click Here to Play Again!</button>
     </div>
     `
     modal.innerHTML = successModal
+}
+
+function replayGame(){
+    timeInterval =  setInterval(gameTimer, 1000);
+    resetGame();
+    modal.style.display = "none";
 }
 
 // add event listener to call flipcard function when clicked
@@ -121,6 +127,7 @@ function resetGame() {
     }
     // reset moves to zero
     document.getElementById("moves").innerHTML = 0;
+    previousMoves = 0;
     seconds = -1; // reset the timer, set to -1 as was going to 1
     setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
     shuffleDeck(); // when game is reset, shuffle cards
