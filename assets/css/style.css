@@ -146,8 +146,12 @@ button {
     color: white;
 }
 
-.buttons {
+.reset-button{
     display: flex;
     justify-content: center;
     margin: auto;
+}
+
+#reset-game {
+    width: 250px;
 }
