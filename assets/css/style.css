@@ -227,6 +227,21 @@ footer i:hover {
     footer {
     font-size: 1.3rem;
     }
+    #modal h1 {
+        font-size: 2rem;
+    }
+    #modal p {
+        font-size: 1.2rem;
+    }
+    #modal label {
+        font-size: 1.2rem;
+    }
+    #modal input {
+        height: 20px;
+    }
+    #modal button {
+        font-size: 0.9rem;
+    }
 }
 
 /* small screens 800px and below */
