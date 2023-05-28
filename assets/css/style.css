@@ -232,3 +232,39 @@ footer i:hover {
         font-size: 1.3rem;
     }
 }
+
+/* small screens 800px and below */
+@media screen and (max-width: 800px) {
+    .game-info {
+    width: 200px;
+}
+}
+
+/* for smaller phone screens 650px and below */
+@media screen and (max-width: 650px) {
+    .card {
+        width: 80px;
+    }
+    .game-info {
+        padding-right: 10px;
+        font-size: 1rem;
+        margin-left: 70px;
+}
+    .game-area {
+        width: 200px
+    }
+    .front, .back {
+        border-radius: 8px;
+    }
+    #reset-game {
+        font-size: 14px;
+        width: 60%;
+        height: 30px;
+    }
+    #flip-card-game {
+        justify-content: space-around;
+    }
+    p {
+        font-size: 1.2rem
+    }
+}
