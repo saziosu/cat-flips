@@ -26,20 +26,20 @@ RESPONSIVE SCREENSHOT HERE
 
 ## JavaScript Validator
 
-[Jshint](https://jshint.com/) was used to validate the JavaScript code in the project
+[Jshint](https://jshint.com/) was used to validate the JavaScript code in the project, did not report any significant problems.
 
-* SCREENSHOT
+![jshint validator results](assets/images/readme-images/jshint.png)
 
 ## HTML Validator
-[W3C](https://validator.w3.org/) was used to validate the HTML code in the project
+[W3C](https://validator.w3.org/) was used to validate the HTML code in the project, passed all checks.
 
 ![HTML validator results](assets/images/readme-images/html-validator.png)
 
 ## CSS Validator
 
-[Jigsaw](https://jigsaw.w3.org/css-validator/) was used to validate the CSS code in the project.
+[Jigsaw](https://jigsaw.w3.org/css-validator/) was used to validate the CSS code in the project, passed all checks.
 
-* SCREENSHOT
+![jigsaw validation results](assets/images/readme-images/jigsaw.png)
 
 ## Lighthouse
 
