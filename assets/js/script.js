@@ -19,6 +19,7 @@ function startGame(event) {
 }
 
 let seconds = 0;
+let timeInterval = 0;
 const matches = document.getElementsByClassName("match");
 let startButton = document.getElementById("submit-start");
 startButton.setAttribute('onclick', 'timeInterval =  setInterval(gameTimer, 1000)');
@@ -53,7 +54,7 @@ function endGame() {
     <button onclick="replayGame()" id="restart">Click Here to Play Again!</button>
     </div>
     `;
-    modal.innerHTML = successModal
+    modal.innerHTML = successModal;
 }
 
 // add event listener to call flipcard function when clicked
@@ -66,7 +67,7 @@ for (let card of cards) {
 let firstCard;
 let secondCard;
 let hasClicked = false;
-let haltFlip = false
+let haltFlip = false;
 // function to flip the card on click
 function flipCard() {
     if (haltFlip) return;
@@ -83,6 +84,7 @@ function flipCard() {
     }
 }
 
+let previousMoves = 0;
 // function to update moves number
 function incrementMoves() {
     let previousMoves = parseInt(document.getElementById("moves").innerText);
@@ -110,7 +112,7 @@ function returnCards() {
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-        haltFlip = false
+        haltFlip = false;
     }, 900);
 }
 
@@ -152,4 +154,3 @@ function shuffleDeck() {
 // set onclick attribute to call reset game function
 let resetButton = document.getElementsByTagName('button')[1];
 resetButton.setAttribute('onclick', 'resetGame();');
-
