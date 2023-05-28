@@ -33,7 +33,7 @@ RESPONSIVE SCREENSHOT HERE
 ## HTML Validator
 [W3C](https://validator.w3.org/) was used to validate the HTML code in the project
 
-* SCREENSHOT
+![HTML validator results](assets/images/readme-images/html-validator.png)
 
 ## CSS Validator
 
@@ -45,7 +45,7 @@ RESPONSIVE SCREENSHOT HERE
 
 Lighthouse, via chrome dev tools, was used to ensure the accessibility is at an acceptable level:
 
-![](assets/images/readme-images/lighthouse.png)
+![Lighthouse screenshot](assets/images/readme-images/lighthouse.png)
 
 ## WAVE
 
