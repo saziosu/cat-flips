@@ -177,8 +177,16 @@ footer i:hover {
 
 /* for medium sized screens 1200px and lower */
 @media screen and (max-width: 1200px) {
+    h1 {
+    font-size: 6rem;
+    }
+
+    p {
+        font-size: 1.7rem
+    }
     .game-area {
-        width: 600px
+        width: 600px;
+        padding: 20px;
     }
     .card {
         width: 130px;
