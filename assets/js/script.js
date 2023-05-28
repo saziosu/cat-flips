@@ -41,9 +41,9 @@ function endGame(){
     <p>
     ${playerName}, you're a winner!
     <br>
-    You found all matches in ${timeScore} seconds!
+    You found all matches in ${timeScore} seconds
     <br>
-    You managed to find all matches in ${movesScore} moves!
+    You managed to find all matches in ${movesScore} moves
     <br>
     Well done!
     </p>
