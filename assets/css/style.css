@@ -89,10 +89,9 @@ p {
 }
 
 .game-area {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 700px;
-    justify-content: center;
 }
 
 /* game info - time and moves */
