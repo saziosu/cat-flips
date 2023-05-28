@@ -288,6 +288,15 @@ footer i:hover {
     p {
         font-size: 1.3rem
     }
+    #modal-content{
+        padding: 20px
+    }
+    #modal input {
+        width: 40%;
+    }
+    #modal button {
+        width: 90%;
+    }
 }
 
 /* screens 500px and below */
