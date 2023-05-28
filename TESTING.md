@@ -45,7 +45,7 @@ RESPONSIVE SCREENSHOT HERE
 
 Lighthouse, via chrome dev tools, was used to ensure the accessibility is at an acceptable level:
 
-* SCREENSHOT
+![](assets/images/readme-images/lighthouse.png)
 
 ## WAVE
 
