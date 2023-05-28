@@ -154,3 +154,23 @@ button {
 #reset-game {
     width: 250px;
 }
+
+/* footer styling */
+
+footer {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+footer i {
+    color: white;
+}
+
+footer i:hover {
+    color: #84888d;
+}
