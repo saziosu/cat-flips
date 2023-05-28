@@ -311,4 +311,20 @@ footer i:hover {
         width: 100%;
         margin: 0;
     }
+    #modal h1 {
+        font-size: 2rem;
+    }
+    #modal p {
+        font-size: 0.9rem;
+    }
+    #modal label {
+        font-size: 0.8rem;
+    }
+    #modal input {
+        height: 10%;
+    }
+    #modal button {
+        width: 100%;
+        font-size: 13px;
+    }
 }
