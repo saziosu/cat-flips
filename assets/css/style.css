@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Montserrat:ital,wght@0,400;1,500&display=swap');
+
 /* global styling */
 * {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    
+
 }
+
 body {
     background-color: #FC948D;
 }
+
 h1 {
     font-family: "Baloo 2", sans-serif;
     font-size: 8rem;
@@ -35,7 +38,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 #modal-content {
@@ -63,7 +66,7 @@ p {
     height: 30px;
     text-align: center;
     border-radius: 5px;
-    
+
 }
 
 #modal button {
@@ -85,7 +88,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
 
 .game-area {
@@ -121,7 +124,8 @@ p {
     transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
     width: 100%;
     border-radius: 20px;
     backface-visibility: hidden;
@@ -132,6 +136,7 @@ p {
 .back {
     position: absolute;
 }
+
 /* buttons */
 button {
     width: 20%;
@@ -145,7 +150,7 @@ button {
     color: white;
 }
 
-.reset-button{
+.reset-button {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -178,20 +183,52 @@ footer i:hover {
 /* for medium sized screens 1200px and lower */
 @media screen and (max-width: 1200px) {
     h1 {
-    font-size: 6rem;
+        font-size: 6rem;
     }
 
     p {
         font-size: 1.7rem
     }
+
     .game-area {
         width: 600px;
         padding: 20px;
     }
+
     .card {
         width: 130px;
     }
+
     .game-info {
-    font-size: 1.6rem;
+        font-size: 1.6rem;
+    }
 }
+
+/* for medium to small screens 900px and below */
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 1.5rem
+    }
+
+    .game-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 400px;
+    }
+
+    .game-info {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        width: 120px;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
 }
