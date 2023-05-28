@@ -8,7 +8,7 @@ form.addEventListener('submit', startGame);
 // define the modal as a variable
 const modal = document.getElementById("modal");
 // function to start game when the button on modal is clicked
-function startGame (event) {
+function startGame(event) {
     // prevent default action of the form
     event.preventDefault();
     let username = document.getElementById("name").value;
@@ -23,14 +23,14 @@ const matches = document.getElementsByClassName("match");
 let startButton = document.getElementById("submit-start");
 startButton.setAttribute('onclick', 'timeInterval =  setInterval(gameTimer, 1000)');
 function gameTimer() {
-        document.getElementById("time").innerHTML = ++seconds;
-    if ( matches.length === 6) {
+    document.getElementById("time").innerHTML = ++seconds;
+    if (matches.length === 6) {
         clearInterval(timeInterval);
         endGame();
     }
 }
 
-function endGame(){
+function endGame() {
     modal.style.removeProperty("display"); // re-use the welcome modal for the success modal
     const timeScore = document.getElementById('time').innerText;
     const movesScore = document.getElementById("moves").innerText;
@@ -105,7 +105,7 @@ function checkPair() {
 }
 
 // if the cards do not match, flip them back over.
-function returnCards (){
+function returnCards() {
     haltFlip = true; // haltFlip locks the rest of the cards while the second card is turning
     setTimeout(() => {
         firstCard.classList.remove('flip');
@@ -127,13 +127,13 @@ function resetGame() {
     previousMoves = 0;
     seconds = -1; // reset the timer, set to -1 as was going to 1
     setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
-    shuffleDeck(); // when game is reset, shuffle cards
+        shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
 
 }
 
-function replayGame(){
-    timeInterval =  setInterval(gameTimer, 1000);
+function replayGame() {
+    timeInterval = setInterval(gameTimer, 1000);
     resetGame();
     modal.style.display = "none";
 }
