@@ -249,6 +249,12 @@ footer i:hover {
     .game-info {
     width: 200px;
 }
+    #modal input {
+        width: 20%;
+    }
+    #modal button {
+        width: 60%;
+    }
 }
 
 /* for smaller phone screens 650px and below */
