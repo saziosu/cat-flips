@@ -143,6 +143,7 @@ button {
     text-align: center;
     margin: 20px;
     color: white;
+    cursor: pointer;
 }
 
 .reset-button{
