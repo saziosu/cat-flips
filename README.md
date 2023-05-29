@@ -144,8 +144,9 @@ The button entices the user to play the game again. This button resets the time 
 * [GitHub](https://github.com/) was used to deploy the site code
 * [AmIResponsive](https://ui.dev/amiresponsive) was used to create the cross device responsivity images
 
-# Deployment
+# Deployment & Developement
 
+## Github Pages
 GitHub pages was used to deploy this site:
 
 1. Login (or signup) to Github.
@@ -154,6 +155,14 @@ GitHub pages was used to deploy this site:
 4. Select pages on the left navigation menu.
 5. From the source dropdown select main branch and click save next to it.
 6. The site has been deployed on clicking save, this can take a few moments to generate the live link at the top of the settings page.
+
+## Forking the Repository
+
+1. Log in or Sign up to [GitHub](https://github.com/)
+2. Navigate to the [Cat Flips Repo](https://github.com/saziosu/cat-flips)
+3. Click the 'fork' button in the top right corner.
+4. Feel free to customize your repo name, this is not required.
+5. Click the Create Fork button.
 
 # Testing
 
