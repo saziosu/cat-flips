@@ -7,8 +7,8 @@ Link for the finished deployed site: [Cat Flips](https://saziosu.github.io/cat-f
 # Table of Contents
 
 * [Automated Testing](#automated-testing)
-    * [JavaScript](#javascript-validator)
-    * [W3C](#html-validator)
+    * [JavaScript Validator](#javascript-validator)
+    * [HTML Validator](#html-validator)
     * [CSS Validator](#css-validator)
     * [Lighthouse](#lighthouse)
     * [Wave](#wave)
