@@ -51,7 +51,7 @@ Lighthouse, via chrome dev tools, was used to ensure the accessibility is at an 
 
 [WAVE](https://wave.webaim.org/) was used to check accessibility
 
-* SCREENSHOT
+![](assets/images/readme-images/wave.png)
 
 # Manual Testing
 
@@ -61,9 +61,21 @@ Lighthouse, via chrome dev tools, was used to ensure the accessibility is at an 
 
 ### Returning User
 
-## Frequent User
 
 # Full Testing
+
+A range of devices were used to test the site.
+
+* OnePlus 7T Pro (Firefox, chrome, opera)
+* MAC: MacBook Pro 14-inch 2021 (Mac OS Ventura 13.4) (Chrome, Safari, Firefox)
+* LENOVO Tab P11 11.5" Tablet (Chrome, Firefox)
+
+[Browserstack](https://www.browserstack.com/) was also used to test on the following devices:
+
+* iPhone 14 (Chrome, Safari)
+* iPhone 12 mini (Chrome, Safari)
+* Samsung s23 (Chrome, Firefox)
+* iPad 10th (Chrome, Safari)
 
 # Bugs
 
