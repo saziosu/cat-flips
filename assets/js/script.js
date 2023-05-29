@@ -64,7 +64,9 @@ let previousMoves = 0;
 // function to update moves number
 function incrementMoves() { // used the Love Maths practice project to help with incrementing the moves
     let previousMoves = parseInt(document.getElementById("moves").innerText);
+    if (firstCard.dataset.cat !== secondCard.dataset.cat) { // if the datasets match exactly, its the same card so it should not count as a move
     document.getElementById("moves").innerText = ++previousMoves;
+    }
 }
 
 // function to check if the cards match
