@@ -173,18 +173,21 @@ GitHub pages was used to deploy this site:
 ## Code
 
 * [freeCodeCamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek), I followed this tutorial to help create the structure for the flip card game and also to help me with turning the cards and blocking the board when the second card is turning.
-* [PortEXE](https://youtu.be/3uuQ3g92oPQ). I used this tutorial to help me implement the Fisher-Yates Shuffle algorithm to shuffle my cards
-* TIMER
+* [PortEXE](https://youtu.be/3uuQ3g92oPQ). I used this tutorial to help me implement the Fisher-Yates Shuffle algorithm to shuffle my cards.
+* [LinxHint](https://linuxhint.com/javascript-count-up-timer/), I used this resource to help guide me to setting up the timer for the game.
+* [W3Schools](https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_stop), used this resource to help with resetting the timer when the reset button is clicked.
+* [W3Schools](https://www.w3schools.com/css/css3_gradients.asp), used this resource to help me create the gradient background on the page.
 * [Code Institute](https://github.com/saziosu/love-maths), I used the Love Maths project as inspriation for helping me count the number of moves.
 
 ## Media
 
 * [Catalyst @ FreePik](https://www.freepik.com/author/catalyststuff) all images on the flip cards were sourced from this resource/artist.
-* [Favicon.io](https://favicon.io/favicon-generator/) was used to generate the favicon
+* [Favicon.io](https://favicon.io/favicon-generator/) was used to generate the favicon.
+* [Adobe Express Editor](https://express.adobe.com/tools/image-resize) was used to resize the images.
 
 # Acknowledgements
 
-* XXXXXX
-* XXXXXX
-* XXXXXX
-* XXXXXX
+* Graeme Taylor my mentor, for all the help and advice throughout the project.
+* Course Facilitator Alan for all the helpful tips and tricks, and great guidance throughout the project.
+* [Kera Cudmore](https://github.com/kera-cudmore) for the extremely helpful [Readme documentation](https://github.com/kera-cudmore/readme-examples).
+* My cohort classmates for feedback during our standups.
