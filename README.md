@@ -65,6 +65,8 @@ The colors were edited to ensure accessibility, with the following being the fin
 
 ![](assets/images/readme-images/coolers-palette.png)
 
+white `#fffdfd` was chosen for the font colors.
+
 ## Typography
 
 Fonts were chosed from GoogleFonts
