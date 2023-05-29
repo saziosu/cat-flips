@@ -57,7 +57,13 @@ Balsamiq was used to create the wireframes for this project for desktop, tablet 
 
 ## Color Scheme
 
-XXXXXXXXXXXXXXX - colors are not set fully yet.
+The color scheme for the website was inspired by this color palette sourced from Canva
+
+![](assets/images/readme-images/canva-palette.png)
+
+The colors were edited to ensure accessibility, with the following being the final colors for the project
+
+![](assets/images/readme-images/coolers-palette.png)
 
 ## Typography
 
@@ -71,10 +77,37 @@ Fonts were chosed from GoogleFonts
 
 ## Imagery
 
-* Images in the body were sourced from [FreePik](https://www.freepik.com/). Further information will be in the credits on this document.
+* Images in the body were sourced from [FreePik](https://www.freepik.com/).
 * Favicon images were generated via [favicon.io](https://favicon.io/favicon-generator/)
 
 # Features 
+
+### Start Modal
+
+![](assets/images/readme-images/start-modal.png)
+
+The modal at the start of the game welcomes the user to the game, and asks them to input their name. 
+The button tells the user that the game will start when it is clicked, letting them know that the time begins when they click the button.
+
+### Cards
+
+![](assets/images/readme-images/cards-area.png)
+
+The back face of the cards are immediately seen on starting the game. They are all clickable and are consistent with the color scheme.
+
+### Game Stats
+
+![](assets/images/readme-images/game-stats.png)
+
+The game stats part of the page shows the user's name that they entered in the starting modal. It also tracks their time in seconds and the number of moves they have made.
+The reset button allows the user to control the game and start afresh, by resetting the moves and time and shuffling the cards.
+
+### End Modal
+
+![](assets/images/readme-images/end-modal.png)
+
+The end modal is consistent in style and color with the start modal. It congradulates the user on their win and provides them with their end moves and the number of seconds it took to complete the game.
+The button entices the user to play the game again. This button resets the time and moves and also shuffles the cards.
 
 ## Current Features
 
