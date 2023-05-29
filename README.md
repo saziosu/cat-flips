@@ -40,8 +40,9 @@ The moves and timer are easily viewed by the user during the game, so they can b
 
 * First Time User
   * As a first time User, we want to be aware of any rules or processes involved in the game, prior to starting the game.
-  * As a first time User, we want the site to be attracitve and easy to use across many devices.
+  * As a first time User, we want the site to be attractive and easy to use across many devices.
   * As a first time User, we want to be able to immediately play again without refreshing the page.
+  
 * Returning User
   * As a returning User, we want the cards to be shuffled every time we play so it is not predictable and repetitive.
   * As a returning User, we want the rules to be available to us again to ensure we know how to play again.
