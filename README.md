@@ -92,7 +92,7 @@ Fonts were chosed from GoogleFonts
 ![](assets/images/readme-images/start-modal.png)
 
 The modal at the start of the game welcomes the user to the game, and asks them to input their name. 
-The button tells the user that the game will start when it is clicked, letting them know that the time begins when they click the button.
+The modal tells the user that the time will start when they submit their name via the button on the modal.
 
 ### Cards
 
