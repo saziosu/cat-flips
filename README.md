@@ -82,6 +82,8 @@ Fonts were chosed from GoogleFonts
 
 # Features 
 
+## Current Features
+
 ### Start Modal
 
 ![](assets/images/readme-images/start-modal.png)
@@ -106,18 +108,22 @@ The reset button allows the user to control the game and start afresh, by resett
 
 ![](assets/images/readme-images/end-modal.png)
 
-The end modal is consistent in style and color with the start modal. It congradulates the user on their win and provides them with their end moves and the number of seconds it took to complete the game.
+The end modal is consistent in style and color with the start modal. It congratulates the user on their win and provides them with their end moves and the number of seconds it took to complete the game.
 The button entices the user to play the game again. This button resets the time and moves and also shuffles the cards.
 
-## Current Features
-
 ## Future Features
+
+* In the future, when I have grown my skills further it would be nice to include a feature the tells the user how much faster they completed the game than their previous try.
+* In the future, it would be fun to include another memory game such as a brain training style game based on colors.
 
 ## Accessibility
 
 * Semantic HTML was used in the index.html file to ensure accessibility.
 * All images were given alt tags to ensure they could be read by screenreaders.
-*  XXXXXXXXXXX
+* Colors were ensured to have enough contrast with the text
+* Lighthouse was run throughout the project development to ensure the accessibility was kept in mind.
+* External links were given aria-label attributes to ensure readability with screenreaders.
+* Images were given consistent alt tags to ensure readability.
 
 # Technology Used
 
