@@ -1,7 +1,9 @@
 # Cat Flips Memory Game
-Cat Flips is a fun memory game designed to be responsive on all sites allowing it to be played on all screen sizes.
+Cat Flips is a fun memory game designed to be responsive on all devices allowing it to be played on all screen sizes.
 
-RESPONSIVE IMAGE HERE
+![](assets/images/readme-images/responsive.png)
+
+Link for the finished deployed site: [Cat Flips](https://saziosu.github.io/cat-flips/)
 
 # Table of Contents
 
@@ -32,20 +34,18 @@ The goal of the site is to be brightly colored and attractive to the user, while
 <br>
 The name entry at the start of the game offers a personalised experience for the user.
 <br>
-The moves and timer are always in view to the user during the game, so they can be aware of their stats at any moment.
+The moves and timer are easily viewed by the user during the game, so they can be aware of their stats at any moment.
 
 ## User Stories
 
 * First Time User
-  * As a first time User, we want to immediately know what the purpose and theme of the site.
-  * As a first time User, we want to be aware of any rules or processes involved in the game.
-  * As a first time user, we want the site to be attracitve and easy to use across many devices.
+  * As a first time User, we want to be aware of any rules or processes involved in the game, prior to starting the game.
+  * As a first time User, we want the site to be attracitve and easy to use across many devices.
+  * As a first time User, we want to be able to immediately play again without refreshing the page.
 * Returning User
-  * As a returning User, we want a familiar feel on returning so the color scheme and personalised aspect will remain the same.
-  * As a returning User, we want to be able to see our previous scores to try improve the following time.
-* Frequent User
-  * xxxxxx
-  * xxxxxx
+  * As a returning User, we want the cards to be shuffled every time we play so it is not predictable and repetitive.
+  * As a returning User, we want the rules to be available to us again to ensure we know how to play again.
+
 
 ## Wireframes
 
