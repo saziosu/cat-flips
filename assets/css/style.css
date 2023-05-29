@@ -6,7 +6,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -28,7 +27,7 @@ p {
     padding-bottom: 50px;
 }
 
-/* styling modal on game start */
+/* styling modal on game start and finish */
 #modal {
     position: fixed;
     z-index: 1;
@@ -116,6 +115,7 @@ p {
     position: relative;
     margin: 5px;
     width: 150px;
+    /* https://www.youtube.com/watch?v=ZniVgo8U7ek was used to help with the cards turning */
     background-color: transparent;
     perspective: 1000px;
     transition: transform 0.7s;

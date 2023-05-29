@@ -33,7 +33,6 @@ function gameTimer() {
     }
 }
 
-
 // add event listener to call flipcard function when clicked
 let cards = document.getElementsByClassName('card');
 for (let card of cards) {
@@ -86,13 +85,12 @@ function checkPair() {
 // if the cards do not match, flip them back over.
 function returnCards() {
     haltFlip = true; // haltFlip locks the rest of the cards while the second card is turning
-    setTimeout(() => { // used this tutorial to help slow down the flip as it was happening before the card turned back https://www.youtube.com/watch?v=ZniVgo8U7ek
+    setTimeout(() => { // credit to this tutorial, also in readme https://www.youtube.com/watch?v=ZniVgo8U7ek
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
         haltFlip = false;
     }, 900);
 }
-
 
 // reset game function
 function resetGame() {
@@ -108,7 +106,6 @@ function resetGame() {
     setTimeout(() => { // setting timeout on the shuffle reset, cards were shuffling before flipping back over
         shuffleDeck(); // when game is reset, shuffle cards
     }, 200);
-
 }
 
 // end of game function, re-uses the start modal & edit the content with template literal
@@ -141,13 +138,13 @@ function endGame() {
 // function to replay the game when the restart button is clicked
 function replayGame() {
     timeInterval = setInterval(gameTimer, 1000);
-    resetGame();
+    resetGame(); // shuffle deck and restart the moves and timer to zero
     modal.style.display = "none";
 }
 
 // get array from cards Class HTML collection
 let cardsArray = Array.from(cards);
-// function to shuffle the cards
+// function to shuffle the cards, used this tutorial for help implementing this; https://www.youtube.com/watch?v=3uuQ3g92oPQ 
 function shuffleDeck() {
     for (let i = cardsArray.length - 1; i > 0; i--) {
         let rand = Math.floor(Math.random() * (i + 1));
