@@ -87,6 +87,19 @@ A range of devices were used to test the site.
 * Samsung s23 (Chrome, Firefox)
 * iPad 10th (Chrome, Safari)
 
+|Feature|Expected|Tested|Result|Pass/Fail|
+|-|-|-|-|-|
+|Start Modal|The start modal name input should be required, it must be filled|Left the input blank, clicked start button|The game does not start and prompts to fill in the input field|Pass|
+|Start Modal|The start button should start the timer when clicked|Filled in the name input and clicked the start button|The timer started when button was clicked|Pass|
+|Cards|Cards should flip to the front face when clicked|Clicked cards|Cards turned to the front face|Pass|
+|Cards|When two cards are clicked, if they match they should remain turned over. If they don't match they should flip to back to the back face.|Clicked cards|Matching cards remained turned, mismatched cards flipped back over to the back face.|Pass|
+|Cards|When all matches are found the game should end | Found all card matches |Game ended, end modal popped up with correct scores | Pass
+|Game Stats|The game stats section should display the User's name along with the number of moves and the length of time in seconds|Entered name on start modal, clicked cards.|The name is displayed, the moves are calculated and the time is counted|Pass|
+|Reset button|The reset game button in the game stats area should reset the timer and moves and also shuffle the deck|Found some matches and clicked the reset game button|The moves and timer were set to 0, and on testing the cards again they were not in the same places|Pass|
+|End Modal|The end modal should display the user's name and the moves and time it took to complete the game|Finished the game|The player's name, moves and time count are displayed|Pass|
+|End Modal|The replay game button should reset the moves and timer to zero and shuffle the cards|Played through game and hit the reset game button|Moves and Timer went to zero, cards were shuffled||
+|External link in Footer|External link should open in a new tab|Clicked GitHub icon|New tab opened with the GitHub repo|Pass|
+
 # Bugs
 
 ## Known Bugs
