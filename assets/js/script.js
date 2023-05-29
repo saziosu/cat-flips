@@ -25,6 +25,7 @@ const matches = document.getElementsByClassName("match");
 let startButton = document.getElementById("submit-start");
 // set an onclick attribute to the start button to start the timer at 1000ms intervals (interval per second)
 startButton.setAttribute('onclick', 'timeInterval =  setInterval(gameTimer, 1000)');
+// used this resource to help set up the timer https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_stop
 function gameTimer() {
     document.getElementById("time").innerHTML = ++seconds;
     if (matches.length === 6) { // if 6 matches are found, the game ends and the timer stops
@@ -62,7 +63,7 @@ function flipCard() {
 
 let previousMoves = 0;
 // function to update moves number
-function incrementMoves() { // used the Love Maths practice project to help with incrementing the moves
+function incrementMoves() { // used the Love Maths practice project to help with incrementing the moves https://github.com/saziosu/love-maths
     let previousMoves = parseInt(document.getElementById("moves").innerText);
     if (firstCard.dataset.cat !== secondCard.dataset.cat) { // if the datasets match exactly, its the same card so it should not count as a move
     document.getElementById("moves").innerText = ++previousMoves;

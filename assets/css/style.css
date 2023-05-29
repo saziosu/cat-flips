@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* style gradient, sourced from this resource https://www.w3schools.com/css/css3_gradients.asp */
 body {
     background-image: linear-gradient(#F84791, #F9B8B1);
 }
