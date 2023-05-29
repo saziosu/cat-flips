@@ -59,8 +59,18 @@ Lighthouse, via chrome dev tools, was used to ensure the accessibility is at an 
 
 ### First Time User
 
+|Goal|Achieved|
+|-|-|
+|As a first time User, we want to be aware of any rules or processes involved in the game, prior to starting the game.|A modal is seen on the initial page load which explains how to play and a button to indicate when it will start.|
+|As a first time User, we want the site to be attractive and easy to use across many devices.|A consistent color scheme is used throughout the project with media queries used to ensure it is responsive on all screen sizes.|
+|As a first time User, we want to be able to immediately play again without refreshing the page.|Upon finishing the game, a modal will appear with the finishing time and moves, along with a button to replay if desired.|
+
 ### Returning User
 
+|Goal|Achieved|
+|-|-|
+|As a returning User, we want the cards to be shuffled every time we play so it is not predictable and repetitive.|The cards are shuffled on each page load, game restart and when the reset button is clicked|
+|As a returning User, we want the rules to be available to us again to ensure we know how to play again.|The start game modal with the game instructions is seen every time the game is loaded.|
 
 # Full Testing
 
