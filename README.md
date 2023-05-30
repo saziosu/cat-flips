@@ -1,5 +1,7 @@
 # Cat Flips Memory Game
 Cat Flips is a fun memory game designed to be responsive on all devices allowing it to be played on all screen sizes.
+The target user is someone who would like to improved their memory skills with an added challenge, to get the shortest time and least moves possible.
+The color scheme and graphics are chosen to give a fun and friendly atmosphere to the user and encourages them to play the game again and again.
 
 ![responsive image](assets/images/readme-images/responsive.png)
 
