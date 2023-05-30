@@ -1,7 +1,7 @@
 # Cat Flips Memory Game
 Cat Flips is a fun memory game designed to be responsive on all devices allowing it to be played on all screen sizes.
 
-![](assets/images/readme-images/responsive.png)
+![responsive image](assets/images/readme-images/responsive.png)
 
 Link for the finished deployed site: [Cat Flips](https://saziosu.github.io/cat-flips/)
 

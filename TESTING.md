@@ -2,7 +2,7 @@
 
 Link for the finished deployed site: [Cat Flips](https://saziosu.github.io/cat-flips/)
 
-![](assets/images/readme-images/responsive.png)
+![responsive image](assets/images/readme-images/responsive.png)
 
 # Table of Contents
 
