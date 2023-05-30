@@ -70,7 +70,7 @@ white `#fffdfd` was chosen for the font colors.
 
 ## Typography
 
-Fonts were chosed from GoogleFonts
+Fonts were chosen from GoogleFonts
 
 * Baloo 2 was used for headings
 
@@ -147,7 +147,7 @@ The button entices the user to play the game again. This button resets the time 
 * [GitHub](https://github.com/) was used to deploy the site code
 * [AmIResponsive](https://ui.dev/amiresponsive) was used to create the cross device responsivity images
 
-# Deployment & Developement
+# Deployment & Development
 
 ## Github Pages
 GitHub pages was used to deploy this site:
@@ -179,7 +179,7 @@ GitHub pages was used to deploy this site:
 * [PortEXE](https://youtu.be/3uuQ3g92oPQ). I used this tutorial to help me implement the Fisher-Yates Shuffle algorithm to shuffle my cards.
 * [W3Schools](https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_stop), used this resource to help with setting up the game timer and stopping it with clear interval when game is finished
 * [W3Schools](https://www.w3schools.com/css/css3_gradients.asp), used this resource to help me create the gradient background on the page.
-* [Code Institute](https://github.com/saziosu/love-maths), I used the Love Maths project as inspriation for helping me count the number of moves.
+* [Code Institute](https://github.com/saziosu/love-maths), I used the Love Maths project as inspiration for helping me count the number of moves.
 
 ## Media
 
