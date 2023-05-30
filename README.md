@@ -179,6 +179,7 @@ GitHub pages was used to deploy this site:
 * [PortEXE](https://youtu.be/3uuQ3g92oPQ). I used this tutorial to help me implement the Fisher-Yates Shuffle algorithm to shuffle my cards.
 * [W3Schools](https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_stop), used this resource to help with setting up the game timer and stopping it with clear interval when game is finished
 * [W3Schools](https://www.w3schools.com/css/css3_gradients.asp), used this resource to help me create the gradient background on the page.
+* [LinuxHint](https://linuxhint.com/javascript-count-up-timer/), also used this resource to help me understand how to implement the timer function.
 * [Code Institute](https://github.com/saziosu/love-maths), I used the Love Maths project as inspiration for helping me count the number of moves.
 
 ## Media
