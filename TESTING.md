@@ -26,9 +26,42 @@ Link for the finished deployed site: [Cat Flips](https://saziosu.github.io/cat-f
 
 ## JavaScript Validator
 
-[Jshint](https://jshint.com/) was used to validate the JavaScript code in the project, did not report any significant problems.
+[Jshint](https://jshint.com/) was used to validate the JavaScript code in the project. 
 
 ![jshint validator results](assets/images/readme-images/jshint.png)
+
+The validator reports an unused variable for replayGame, this is a function that is called in the above code block in the button attribute:
+
+```
+   let successModal = `
+    <div id="modal-content">
+    <h1>Congratulations!<h1>
+    <p>
+    ${playerName}, you're a winner!
+    <br>
+    <br>
+    You found all matches in ${timeScore} seconds
+    <br>
+    <br>
+    You managed to find all matches in ${movesScore} moves
+    <br>
+    <br>
+    Well done!
+    </p>
+    <button onclick="replayGame()" id="restart">Click Here to Play Again!</button>
+    </div>
+    `;
+    modal.innerHTML = successModal;
+}
+
+// function to replay the game when the restart button is clicked
+function replayGame() {
+    timeInterval = setInterval(gameTimer, 1000);
+    resetGame(); // shuffle deck and restart the moves and timer to zero
+    modal.style.display = "none";
+}
+```
+
 
 ## HTML Validator
 [W3C](https://validator.w3.org/) was used to validate the HTML code in the project, passed all checks.
