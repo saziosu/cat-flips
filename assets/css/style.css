@@ -347,7 +347,7 @@ footer i:hover {
     }
 }
 
-/* screens 500px and below */
+/* small screens 500px and below */
 @media screen and (max-width: 500px) {
     .card {
         width: 100px;
@@ -381,5 +381,24 @@ footer i:hover {
     #modal button {
         width: 100%;
         font-size: 13px;
+    }
+}
+
+/* small screens 375px width and below */
+@media screen and (max-width: 375px) {
+    #modal h1 {
+        font-size: 1.2rem;
+    }
+
+    #modal button {
+        font-size: 11px;
+    }
+    
+    .game-area {
+        margin-left: 5px;;
+        padding: 0;
+    }
+    .card {
+        width: 95px;
     }
 }
